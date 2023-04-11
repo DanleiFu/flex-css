@@ -1,8 +1,7 @@
 * {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', Arial;
     margin: 0;
     box-sizing: border-box;
-    background-color: #494C8C;
     list-style: none;
 
 }
@@ -15,12 +14,14 @@ a:link, a:visited {
 #wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 60px 1100px 60px;
+    grid-template-rows: 60px 2550px 60px;
     grid-template-areas:
         "header header header header"
         "content content sidebar sidebar"
         "footer footer footer footer";
-    gap: 10px;
+    gap: 30px;
+    background: linear-gradient(#494C8C, #F2916D);
+
 }
 
 #logo {
@@ -45,8 +46,8 @@ nav ul{
     padding: 0;
     font-size: 20pt;
     margin-bottom: 60px;
-    margin-top: 60px;
     color: #F2916D;
+    margin-top: 30px;
     font-weight: 400;
 }
 
@@ -73,20 +74,73 @@ nav ul li{
 
 main{
     grid-area: content;
-    font-size: 30pt;
-    color: #F2916D;
-    padding-top: 50%;
-    text-align:center;
-    vertical-align: middle;
     /*grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;*/
 }
 
-article {
+.area1{
+    height: 700px;
+}
+
+#title1,#title2,#title3{
+    font-size: 30pt;
+    text-align:center;
+    vertical-align: middle;
+}
+
+#title1{
+    padding-top: 50%;
+    color: #F2916D;
+}
+
+#title2{
+    padding-top: 40%;
+    color: #F2D6A2;
+}
+
+#title3{
+    padding-top: 50%;
+    color: #73404E;
+}
+
+.area2{
+    height: 500px;
+}
+
+.area3{
+    height: 1250px;
+}
+
+.right{
     width: 95%;
-    margin:  10px 10px 10px 0;
+    margin: 10px 10px 10px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#intent2{
+    display: table;
+    margin-left: 30px;
+    width: 100%;
+}
+
+#intent3 li{
+    color: #3a2027;
+}
+
+
+.left{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#dunkel{
+    color:#73404E;
 }
 
 aside {
@@ -98,10 +152,19 @@ aside {
 }
 
 footer {
-    background-color: lightgray;
+    background-color: #F2916D;
     grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
     /*grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 4;*/
+}
+
+footer div{
+    color:#73404E;
+    padding: 20px;
 }

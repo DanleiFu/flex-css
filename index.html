@@ -23,24 +23,84 @@
             </nav>
         </header>
         <main>
-            Was ist Flexbox?
+            <div class="area1" id="title1">Was ist Flexbox?</div>
+            <div class="area2" id="intent2">
+                <article class="left">
+                    <li>In den 2000er Jahren motivierte die intensive Nutzung des Webs durch mobile Agenten "flüssige
+                        Layouts" und responsive Elemente für die wachsende Vielfalt an Bildschirmgrößen. In den 2010er
+                        Jahren inspirierte die intensive Nutzung beliebter JavaScript-Layout-Frameworks wie Bootstrap
+                        die CSS-Spezifikationen für Flexbox- und Grid-Layouts.</li>
+                    <li>Die CSS-3-Module enthielten ähnliche Lösungen wie Flexbox und Grid.</li>
+                    <li>Im Dezember 2022 unterstützen 99,68 % der installierten Browser (99,59 % der Desktop-Browser und
+                        100 % der mobilen Browser) das CSS Flexible Box Layout.</li>
+                    <li>Hinweis: Das Flexbox-Layout eignet sich am besten für die Komponenten einer Anwendung und für
+                        kleine Layouts, während das Grid-Layout für größere Layouts gedacht ist.</li>
+                </article>
+            </div>
+            <div class="area3" id="title3">Grundlagen und Terminologie</div>
         </main>
         <aside>
-            <article>
-                <ul class="subtitle">Definition</ul>
-                <li class="paragraph-end">CSS Flexible Box Layout, allgemein bekannt als Flexbox, ist ein CSS 3-Web-Layout-Modell. Es befindet sich im Stadium der W3C-Kandidatenempfehlung (CR). Das Flex-Layout ermöglicht die automatische Anordnung von responsiven Elementen innerhalb eines Containers in Abhängigkeit von der Größe des Viewports (Gerätebildschirm).</li>
-                <ul class="subtitle">Konzepte</ul>
-                <li>Das CSS-Flexbox-Layout ist eine besondere Art, das Layout von HTML-Seiten festzulegen.</li>
-                <li>Eines der wichtigsten Merkmale des Flex-Layouts ist seine Fähigkeit, sich an die Umgebung anzupassen, in der es angezeigt wird. Flexboxen können sich in ihrer Größe anpassen - entweder verkleinern, um nicht unnötig Platz zu beanspruchen, oder vergrößern, um Platz für Inhalte zu schaffen, die in ihre Grenzen passen. Außerdem ist das Flex-Layout in Bezug auf den Inhaltsfluss weniger restriktiv als andere CSS-Layoutmodelle, die in der Regel unidirektional sind. Die Flex-Fließrichtung kann nach rechts, links, oben oder unten angegeben werden. Einzelne Elemente innerhalb eines Flex-Containers können auch automatisch neu angeordnet werden, um sich dem verfügbaren Platz im Layout anzupassen.</li>
-                <li>Die Hauptidee hinter dem Flex-Layout besteht darin, dem Container die Möglichkeit zu geben, die Breite/Höhe (und die Reihenfolge) seiner Elemente zu ändern, um den verfügbaren Platz bestmöglich auszufüllen (hauptsächlich, um sich an alle Arten von Anzeigegeräten und Bildschirmgrößen anzupassen). Ein Flexcontainer vergrößert die Elemente, um den verfügbaren Platz zu füllen, oder verkleinert sie, um einen Überlauf zu verhindern.</li>
-                <li>Am wichtigsten ist, dass das Flexbox-Layout im Gegensatz zu den regulären Layouts (Block, der vertikal und Inline, der horizontal ausgerichtet ist) richtungsunabhängig ist. Während diese für Seiten gut funktionieren, fehlt es ihnen an Flexibilität (kein Wortspiel beabsichtigt), um große oder komplexe Anwendungen zu unterstützen (vor allem, wenn es darum geht, die Ausrichtung zu ändern, die Größe zu ändern, zu strecken, zu schrumpfen, usw.).</li>
-            </article>
+            <div class="area1" id="intent1">
+                <article class="right">
+                    <ul class="subtitle">Definition</ul>
+                    <li class="paragraph-end">CSS Flexible Box Layout, allgemein bekannt als Flexbox, ist ein CSS
+                        3-Web-Layout-Modell. Es befindet sich im Stadium der W3C-Kandidatenempfehlung (CR). Das
+                        Flex-Layout ermöglicht die automatische Anordnung von responsiven Elementen innerhalb eines
+                        Containers in Abhängigkeit von der Größe des Viewports (Gerätebildschirm).</li>
+                    <ul class="subtitle">Konzepte</ul>
+                    <li>Das CSS-Flexbox-Layout ist eine besondere Art, das Layout von HTML-Seiten festzulegen.</li>
+                    <li>Eines der wichtigsten Merkmale des Flex-Layouts ist seine Fähigkeit, sich an die Umgebung
+                        anzupassen, in der es angezeigt wird. Flexboxen können sich in ihrer Größe anpassen - entweder
+                        verkleinern, um nicht unnötig Platz zu beanspruchen, oder vergrößern, um Platz für Inhalte zu
+                        schaffen, die in ihre Grenzen passen. Außerdem ist das Flex-Layout in Bezug auf den Inhaltsfluss
+                        weniger restriktiv als andere CSS-Layoutmodelle, die in der Regel unidirektional sind. Die
+                        Flex-Fließrichtung kann nach rechts, links, oben oder unten angegeben werden. Einzelne Elemente
+                        innerhalb eines Flex-Containers können auch automatisch neu angeordnet werden, um sich dem
+                        verfügbaren Platz im Layout anzupassen.</li>
+                </article>
+            </div>
+            <div class="area2" id="title2">Geschichte</div>
+            <div class="area3" id="intent3">
+                <article class="right">
+                    <ul class="subtitle" id="dunkel">Grundlagen</ul>
+                    <li>Da es sich bei flexbox um ein ganzes Modul und nicht um eine einzelne Eigenschaft handelt,
+                        umfasst es eine ganze Reihe von Dingen, darunter auch eine ganze Reihe von Eigenschaften. Einige
+                        von ihnen sind für den Container (übergeordnetes Element, bekannt als "flex container")
+                        bestimmt, während die anderen für die untergeordneten Elemente (die "flex items") bestimmt sind.
+                    </li>
+                    <li>Während das "normale" Layout sowohl auf Block- als auch auf Inline-Flussrichtungen basiert,
+                        beruht das Flex-Layout auf "Flex-Flussrichtungen". Bitte sehen Sie sich diese Abbildung aus der
+                        Spezifikation an, die die Grundidee des Flex-Layouts erläutert.</li>
+                    <li>Die Elemente werden entweder entlang der Hauptachse (vom Hauptanfang zum Hauptende) oder entlang
+                        der Querachse (vom Queranfang zum Querende) angeordnet.</li>
+                    <img src="img/00-basic-terminology.svg" class="paragraph-end">
+                    <ul class="subtitle" id="dunkel">Terminologie</ul>
+                    <li><b>main axis</b> - Die Hauptachse eines Flex-Containers ist die primäre Achse, entlang der die
+                        Flex-Elemente angeordnet werden. Beachten Sie, dass sie nicht unbedingt horizontal ist; sie
+                        hängt von der Eigenschaft flex-direction ab (siehe unten).</li>
+                    <li><b>main-start | main-end</b> - Die Flex-Elemente werden innerhalb des Containers vom main-start
+                        bis zum main-end platziert.</li>
+                    <li><b>main size</b> - Die Breite oder Höhe eines Flex-Elements, je nachdem, was in der
+                        Hauptdimension liegt, ist die Hauptgröße des Elements. Die Eigenschaft "Hauptgröße" des
+                        Flexelements ist entweder die Eigenschaft "Breite" oder "Höhe", je nachdem, was in der
+                        Hauptdimension liegt.</li>
+                    <li><b>cross axis</b> - Die Achse, die senkrecht zur Hauptachse steht, wird Querachse genannt. Ihre
+                        Richtung hängt von der Richtung der Hauptachse ab.</li>
+                    <li><b>cross-start</b> | cross-end - Flex-Linien werden mit Elementen gefüllt und im Container
+                        platziert, beginnend an der cross-start Seite des Flex-Containers und in Richtung der cross-end
+                        Seite.</li>
+                    <li><b>cross size</b> - Die Breite oder Höhe eines Flexelements, je nachdem, was in der
+                        Querdimension liegt, ist die Quergröße des Elements. Die Eigenschaft Quergröße ist diejenige von
+                        "Breite" oder "Höhe", die sich in der Querdimension befindet.</li>
+                </article>
+            </div>
         </aside>
+        <footer>
+                <div>Danlei Fu</div>
+                <div>HfG Schwäbisch Gmünd</div>
+                <div>Sommersemester 2023</div>
+        </footer>
     </div>
 </body>
-
-<footer>
-
-</footer>
 
 </html>
