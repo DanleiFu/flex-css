@@ -9,7 +9,13 @@
 a:link, a:visited {
     text-decoration: none;
     background-color:#F2916D;
+    color: #494C8C;
 }
+
+a:hover {
+    color:#73404E;
+}
+
 
 #wrapper {
     display: grid;
@@ -22,13 +28,6 @@ a:link, a:visited {
     gap: 30px;
     background: linear-gradient(#494C8C, #F2916D);
 
-}
-
-#logo {
-    height: 25px;
-    width: 200px;
-    background-color: red;
-    margin-bottom: 10px;
 }
 
 header{

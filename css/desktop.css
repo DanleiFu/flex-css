@@ -1,0 +1,151 @@
+* {
+    font-family: 'Quicksand', Arial;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    background-color:#73404E;
+    color:#F2916D;
+}
+
+a:hover {
+    color:#F2D6A2;
+}
+
+header{
+    grid-area: header;
+    background-color:#73404E;
+}
+
+nav ul{
+    text-align:center;
+    padding: 20px;
+    background-color:#73404E;
+}
+
+nav ul li{
+    display: inline;
+    padding-right: 5%;
+    background-color: #73404E;
+    color:#F2916D;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 6700px 60px;
+    grid-template-areas:
+        "header header header header"
+        "content content sidebar sidebar"
+        "footer footer footer footer";
+    gap: 10px;
+    background: linear-gradient(#F2916D,#494C8C);
+}
+
+#content-wrapper {
+    overflow: hidden;
+}
+
+li{
+    color: #F2D6A2;
+    font-weight: 200;
+    padding-bottom: 10px;
+}
+
+main{
+    grid-area: content;
+}
+
+main #container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+}
+
+#container2{
+    width: 100%;
+    background-color: #F2D6A2;
+}
+
+h1{
+    color: #46272f;
+    padding:30px 30px 0 30px;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+}
+
+.subtitle{
+    width: 90%;
+    padding:0;
+    font-size: 20pt;
+    margin: 30px;
+    color:#46272f;
+    font-weight: 400;
+}
+
+main article li{
+    color: #46272f;
+    padding-left: 30px;
+}
+
+aside article li{
+    color: #46272f;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.foto{
+    margin-left: 30px;
+}
+
+.hell li{
+    color: #F2D6A2;
+}
+
+.hell ul{
+    color: #F2916D;
+}
+
+.hell .foto{
+    background-color: #F2D6A2;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+aside {
+    grid-area: sidebar;
+    /*grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;*/
+}
+
+footer {
+    background-color:#494C8C;
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    /*grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;*/
+}
+
+footer div{
+    color:#F2916D;
+    padding: 20px;
+}
