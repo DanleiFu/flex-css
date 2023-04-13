@@ -15,6 +15,14 @@ a:hover {
     color:#F2D6A2;
 }
 
+.home{
+    position:relative;
+    top: 2px;
+    width: 25px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
 header{
     grid-area: header;
     background-color:#73404E;

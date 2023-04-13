@@ -13,6 +13,9 @@
         background: linear-gradient(#F2916D,#494C8C);
     }
 
+    .bild-oben{
+        padding-top: 20px;
+    }
     main article li{
         padding-right: 30px;
     }
