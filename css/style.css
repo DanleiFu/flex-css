@@ -16,11 +16,16 @@ a:hover {
     color:#73404E;
 }
 
+.home{
+    width: 25px;
+    padding-bottom: 0;
+    margin: 0;
+}
 
 #wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 60px 2550px 60px;
+    grid-template-rows: 60px auto auto;
     grid-template-areas:
         "header header header header"
         "content content sidebar sidebar"
@@ -47,7 +52,7 @@ nav ul{
     margin-bottom: 60px;
     color: #F2916D;
     margin-top: 30px;
-    font-weight: 400;
+    font-weight:500;
 }
 
 li{
@@ -73,10 +78,6 @@ nav ul li{
 
 main{
     grid-area: content;
-    /*grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;*/
 }
 
 .area1{
@@ -84,6 +85,7 @@ main{
 }
 
 #title1,#title2,#title3{
+    font-family: 'Tilt Prism';
     font-size: 30pt;
     text-align:center;
     vertical-align: middle;
@@ -105,11 +107,11 @@ main{
 }
 
 .area2{
-    height: 500px;
+    height: 700px;
 }
 
 .area3{
-    height: 1250px;
+    height: 1500px;
 }
 
 .right{
@@ -144,10 +146,6 @@ img {
 
 aside {
     grid-area: sidebar;
-    /*grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;*/
 }
 
 footer {
@@ -157,10 +155,6 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content:space-between;
-    /*grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4;*/
 }
 
 footer div{

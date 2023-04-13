@@ -1,4 +1,4 @@
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
     #wrapper {
         display: grid;
         width: 100%;
@@ -10,48 +10,48 @@
             "sidebar"
             "footer";
         gap: 5px;
-        background: linear-gradient(#494C8C, #F2916D);
+        background: linear-gradient(#F2916D,#494C8C);
     }
 
-    .right{
-        width: 90%;
-        margin: 10px;
+    main article li{
+        padding-right: 30px;
     }
 
-    #intent2{
-        display: table;
+    .foto{
         margin-right: 30px;
-        width: 90%;
     }
 
-    #intent1,#intent3{
-        width: 90%;
-        margin-left: 30px;
+    #title-hell{
+        color:#F2916D;
     }
 
-    #intent3, .area3{
-        height: 1650px;
+    .mobile-dunkel li{
+        color: #46272f;
     }
 
-    #title1{
-        height: 300px;
+    .mobile-dunkel ul{
+        color: #46272f;
     }
 
-    .left{
-        height: 500px;
+    #mobile-dunkel{
+        color: #46272f;
     }
 
-    #title3{
-        height: 500px;
-        color: #F2916D;
+    #dunkel li{
+        color: #46272f;
     }
 
-    #title2{
-        padding-top: 100%;
+    .mobile-hell li{
+        color: #F2D6A2;
     }
+
+    .mobile-hell ul{
+        color:#F2916D;
+    }
+
 
     footer {
-        background-color:#F2916D;
+        background-color:#494C8C;
         grid-area: footer;
         display: flex;
         flex-direction: row;
@@ -60,7 +60,11 @@
     }
     
     footer div{
-        color:#73404E;
+        color:#F2916D;
         padding: 20px;
+    }
+
+    img {
+        max-width: 100%;
     }
 }

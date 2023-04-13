@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex (CSS)</title>
     <link rel="stylesheet" href="css/desktop.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mobile2.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
 </head>
 
 <body>
@@ -22,7 +21,7 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main id="#content-wrapper">
             <div id="container">
                 <img src="img/01-container.svg">
             </div> 
@@ -59,8 +58,8 @@
                 <li><b>space-around</b>: Die Einträge sind gleichmäßig in der Zeile verteilt, mit gleichem Abstand um sie herum. Beachten Sie, dass die Abstände visuell nicht gleich sind, da alle Positionen auf beiden Seiten den gleichen Platz haben. Das erste Element hat eine Einheit Platz am Rand des Containers, aber zwei Einheiten Platz zwischen dem nächsten Element, weil das nächste Element seinen eigenen Abstand hat.</li>
                 <li><b>space-evenly</b>: Die Elemente werden so verteilt, dass der Abstand zwischen zwei Elementen (und der Abstand zu den Rändern) gleich ist.</li>
             </article>
-            <article class="hell">
-                <ul class="subtitle">align-items</ul>
+            <article class="hell" id="dunkel">
+                <ul class="subtitle" id="mobile-dunkel">align-items</ul>
                 <li>Damit wird das Standardverhalten für die Anordnung von Flexelementen entlang der Querachse in der aktuellen Zeile festgelegt. Betrachten Sie es als die Version von justify-content für die Querachse (rechtwinklig zur Hauptachse).</li>
                 <img src="img/align-items.svg" class="foto">
                 <li><b>stretch (default)</b>: Dehnen, um den Container auszufüllen (trotzdem min-width/max-width beachten)</li>
@@ -70,8 +69,8 @@
                 <li><b>baseline</b>: Die Elemente werden so ausgerichtet, dass ihre Grundlinien übereinstimmen.</li>
                 <li>Die Modifizierungsschlüsselwörter safe und unsafe können in Verbindung mit allen anderen Schlüsselwörtern verwendet werden (beachten Sie jedoch die Browserunterstützung) und sollen verhindern, dass Elemente so ausgerichtet werden, dass der Inhalt unzugänglich wird.</li>
             </article>
-            <article class="hell">
-                <ul class="subtitle">align-content</ul>
+            <article class="hell" id="dunkel">
+                <ul class="subtitle" id="mobile-dunkel">align-content</ul>
                 <li>Dies richtet die Zeilen eines Flex-Containers aus, wenn in der Querachse zusätzlicher Platz vorhanden ist, ähnlich wie justify-content einzelne Elemente innerhalb der Hauptachse ausrichtet.                </li>
                 <img src="img/align-content.svg" class="foto">
                 <li><b>normal (default)</b>: alle flexiblen Elemente werden in einer Zeile angezeigt.Die Elemente werden an ihrer Standardposition gepackt, als ob kein Wert festgelegt worden wäre.</li>
@@ -84,8 +83,8 @@
                 <li><b>stretch</b>: Die Zeilen dehnen sich aus, um den verbleibenden Platz einzunehmen.</li>
                 <li>Die Modifizierungsschlüsselwörter safe und unsafe können in Verbindung mit allen anderen Schlüsselwörtern verwendet werden (beachten Sie jedoch die Browserunterstützung) und sollen verhindern, dass Elemente so ausgerichtet werden, dass der Inhalt unzugänglich wird.</li>
             </article>
-            <article class="hell">
-                <ul class="subtitle">gap, row-gap, column-gap</ul>
+            <article class="hell" id="dunkel">
+                <ul class="subtitle" id="mobile-dunkel">gap, row-gap, column-gap</ul>
                 <li>Die Eigenschaft gap steuert ausdrücklich den Abstand zwischen Flex-Elementen. Dieser Abstand wird nur zwischen den Elementen und nicht an den äußeren Rändern angewendet.</li>
                 <img src="img/gap-1.svg" class="foto">
                 <li>Das Verhalten könnte man sich als minimalen Zwischenraum vorstellen, denn wenn der Zwischenraum irgendwie größer ist (wegen etwas wie <b>justify-content</b>: <b>space-between</b>;), dann wird die Lücke nur wirksam, wenn der Zwischenraum am Ende kleiner wäre.</li>
@@ -93,34 +92,34 @@
             </article>
         </main>
         <aside>
-            <div id="container2">
+            <div id="container">
                 <img src="img/02-items.svg" class="foto">
             </div>
-            <h1 class="right">Eigenschaften für die Kinder(flex items)</h1>
-            <article>
+            <h1 class="right" id="title-hell">Eigenschaften für die Kinder(flex items)</h1>
+            <article class="mobile-hell">
                 <ul class="subtitle">order</ul>
                 <li>Standardmäßig werden die Flex-Elemente in der Reihenfolge der Quelle angeordnet. Die Eigenschaft order steuert jedoch die Reihenfolge, in der sie im Flex-Container erscheinen.</li>
                 <img src="img/order.svg" class="foto">
                 <li>Artikel mit der gleichen Reihenfolge kehren zur Ausgangsreihenfolge zurück.</li>
             </article>
-            <article>
+            <article class="mobile-hell">
                 <ul class="subtitle">flex-grow</ul>
                 <li>Definiert die Fähigkeit eines Flex Items, bei Bedarf zu wachsen. Sie akzeptiert einen einheitenlosen Wert, der als Proportion dient. Er gibt an, wie viel des verfügbaren Platzes innerhalb des Flex-Containers das Element einnehmen soll.</li>
                 <li>Wenn für alle Elemente flex-grow auf 1 gesetzt ist, wird der verbleibende Platz im Container gleichmäßig auf alle Kinder verteilt. Wenn eines der untergeordneten Elemente den Wert 2 hat, nimmt es doppelt so viel Platz ein wie eines der anderen Elemente (oder es versucht es zumindest).</li>
                 <img src="img/flex-grow.svg" class="foto">
                 <li>Negative Zahlen sind ungültig.</li>
             </article>
-            <article>
+            <article class="mobile-hell">
                 <ul class="subtitle">flex-shrink</ul>
                 <li>Damit wird festgelegt, dass ein Flexelement bei Bedarf verkleinert werden kann.</li>
                 <li>Negative Zahlen sind ungültig.</li>
             </article>
-            <article>
+            <article class="mobile-hell">
                 <ul class="subtitle">flex-basis</ul>
                 <li>Hier wird die Standardgröße eines Elements festgelegt, bevor der verbleibende Platz verteilt wird. Es kann eine Länge (z.B. 20%, 5rem, etc.) oder ein Schlüsselwort sein. Das auto-Schlüsselwort bedeutet "schau auf meine width- oder height-Eigenschaft" (was vorübergehend durch das main-size-Schlüsselwort gemacht wurde, bis es veraltet war). Das Schlüsselwort content bedeutet "Größe basierend auf dem Inhalt des Elements" - dieses Schlüsselwort wird noch nicht gut unterstützt, daher ist es schwer zu testen und noch schwerer zu wissen, was seine Geschwister max-content, min-content und fit-content tun.</li>
                 <li>Bei einem Wert von 0 wird der zusätzliche Platz um den Inhalt nicht berücksichtigt. Bei einem Wert von auto wird der zusätzliche Platz auf der Grundlage des Flex-grow-Wertes verteilt.</li>
             </article>
-            <article>
+            <article class="mobile-hell">
                 <ul class="subtitle">align-self</ul>
                 <li>Damit kann die Standardausrichtung (oder die durch align-items festgelegte) für einzelne Flex-Elemente außer Kraft gesetzt werden.</li>
                 <img src="img/align-self.svg" class="foto">
