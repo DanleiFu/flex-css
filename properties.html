@@ -17,7 +17,7 @@
         <header>
             <nav>
                 <ul>
-                    <li class="home"><a href="../../index.html"><img src="img/home1.svg" class="home"></a></li>
+                    <li class="home"><a href="../../index.html"><img src="img/home1.png" class="home"></a></li>
                     <li><a href="index.html">Was ist Flexbox?</a></li>
                     <li><a href="properties.html">Welche Eigenschaft hat Flexbox?</a></li>
                 </ul>
@@ -25,13 +25,13 @@
         </header>
         <main id="#content-wrapper">
             <div id="container">
-                <img src="img/01-container.svg" class="bild-oben">
+                <img src="img/01-container.png" class="bild-oben">
             </div> 
             <h1 class="left">Eigenschaften für den Parent(Flex-Container)</h1>
             <article>
                 <ul class="subtitle">flex-direction</ul>
                 <li>Damit wird die Hauptachse festgelegt und damit die Richtung, in der die Flexelemente im Flexcontainer platziert werden. Flexbox ist (abgesehen vom optionalen Umbruch) ein eindirektionales Layoutkonzept. Stellen Sie sich vor, dass Flexelemente in erster Linie entweder in horizontalen Reihen oder vertikalen Spalten angeordnet werden.</li>
-                <img src="img/flex-direction.svg" class="foto">
+                <img src="img/flex-direction.png" class="foto">
                 <li><b>row (default)</b>: links nach rechts in ltr; rechts nach links in rtl</li>
                 <li><b>row-reverse</b>: von rechts nach links in ltr; von links nach rechts in rtl</li>
                 <li><b>column</b>: wie Zeile, aber von oben nach unten</li>
@@ -40,7 +40,7 @@
             <article>
                 <ul class="subtitle">flex-wrap</ul>
                 <li>Standardmäßig versuchen die Flex-Elemente, alle in eine Zeile zu passen. Mit dieser Eigenschaft können Sie das ändern und die Elemente nach Bedarf umbrechen lassen.</li>
-                <img src="img/flex-wrap.svg" class="foto">
+                <img src="img/flex-wrap.png" class="foto">
                 <li><b>nowrap (default)</b>: alle flexiblen Elemente werden in einer Zeile angezeigt.</li>
                 <li><b>wrap</b>: Flex-Elemente werden auf mehrere Zeilen umbrochen, von oben nach unten.</li>
                 <li><b>wrap-reverse</b>: Flex-Elemente werden in mehreren Zeilen von unten nach oben umbrochen.</li>
@@ -48,7 +48,7 @@
             <article>
                 <ul class="subtitle">justify-content</ul>
                 <li>Damit wird die Ausrichtung entlang der Hauptachse festgelegt. Sie hilft bei der Verteilung des zusätzlichen freien Platzes, der übrig bleibt, wenn entweder alle flexiblen Elemente in einer Zeile unflexibel sind oder flexibel sind, aber ihre maximale Größe erreicht haben. Sie steuert auch die Ausrichtung der Elemente, wenn sie die Zeile überfüllen.</li>
-                <img src="img/justify-content.svg" class="foto">
+                <img src="img/justify-content.png" class="foto">
                 <li><b>flex-start (default)</b>: Die Elemente werden zum Anfang der Flex-Richtung hin gepackt.</li>
                 <li><b>flex-end</b>: Die Elemente werden in Richtung des Endes der Flex-Richtung gepackt.</li>
                 <li><b>start</b>: Die Objekte werden in Richtung des Beginns der Schreibrichtung gepackt.</li>
@@ -63,7 +63,7 @@
             <article class="hell" id="dunkel">
                 <ul class="subtitle" id="mobile-dunkel">align-items</ul>
                 <li>Damit wird das Standardverhalten für die Anordnung von Flexelementen entlang der Querachse in der aktuellen Zeile festgelegt. Betrachten Sie es als die Version von justify-content für die Querachse (rechtwinklig zur Hauptachse).</li>
-                <img src="img/align-items.svg" class="foto">
+                <img src="img/align-items.png" class="foto">
                 <li><b>stretch (default)</b>: Dehnen, um den Container auszufüllen (trotzdem min-width/max-width beachten)</li>
                 <li><b>flex-start / start / self-start</b>: Elemente werden am Anfang der Querachse platziert. Der Unterschied zwischen diesen beiden Optionen ist subtil und bezieht sich auf die Einhaltung der Regeln für die Flex-Richtung oder den Schreibmodus.</li>
                 <li><b>flex-end / end / self-end</b>: Die Elemente werden am Ende der Querachse platziert. Auch hier ist der Unterschied subtil und bezieht sich auf die Einhaltung der Regeln für die Flex-Richtung bzw. den Schreibmodus.</li>
@@ -74,7 +74,7 @@
             <article class="hell" id="dunkel">
                 <ul class="subtitle" id="mobile-dunkel">align-content</ul>
                 <li>Dies richtet die Zeilen eines Flex-Containers aus, wenn in der Querachse zusätzlicher Platz vorhanden ist, ähnlich wie justify-content einzelne Elemente innerhalb der Hauptachse ausrichtet.                </li>
-                <img src="img/align-content.svg" class="foto">
+                <img src="img/align-content.png" class="foto">
                 <li><b>normal (default)</b>: alle flexiblen Elemente werden in einer Zeile angezeigt.Die Elemente werden an ihrer Standardposition gepackt, als ob kein Wert festgelegt worden wäre.</li>
                 <li><b>flex-start / start</b>: Elemente werden an den Anfang des Containers gepackt. Das (stärker unterstützte) flex-start berücksichtigt die flex-Richtung, während start die Richtung des Schreibmodus berücksichtigt.</li>
                 <li><b>flex-end / end</b>: Elemente, die bis zum Ende des Containers gepackt werden. Das (stärker unterstützte) flex-end beachtet die Flex-Richtung, während end die Schreibrichtung beachtet.</li>
@@ -88,27 +88,27 @@
             <article class="hell" id="dunkel">
                 <ul class="subtitle" id="mobile-dunkel">gap, row-gap, column-gap</ul>
                 <li>Die Eigenschaft gap steuert ausdrücklich den Abstand zwischen Flex-Elementen. Dieser Abstand wird nur zwischen den Elementen und nicht an den äußeren Rändern angewendet.</li>
-                <img src="img/gap-1.svg" class="foto">
+                <img src="img/gap-1.png" class="foto">
                 <li>Das Verhalten könnte man sich als minimalen Zwischenraum vorstellen, denn wenn der Zwischenraum irgendwie größer ist (wegen etwas wie <b>justify-content</b>: <b>space-between</b>;), dann wird die Lücke nur wirksam, wenn der Zwischenraum am Ende kleiner wäre.</li>
                 <li>Es ist nicht ausschließlich für Flexbox, Lücke funktioniert in Grid und mehrspaltigen Layout als gut.</li>
             </article>
         </main>
         <aside>
             <div id="container">
-                <img src="img/02-items.svg" class="foto">
+                <img src="img/02-items.png" class="foto">
             </div>
             <h1 class="right" id="title-hell">Eigenschaften für die Kinder(flex items)</h1>
             <article class="mobile-hell">
                 <ul class="subtitle">order</ul>
                 <li>Standardmäßig werden die Flex-Elemente in der Reihenfolge der Quelle angeordnet. Die Eigenschaft order steuert jedoch die Reihenfolge, in der sie im Flex-Container erscheinen.</li>
-                <img src="img/order.svg" class="foto">
+                <img src="img/order.png" class="foto">
                 <li>Artikel mit der gleichen Reihenfolge kehren zur Ausgangsreihenfolge zurück.</li>
             </article>
             <article class="mobile-hell">
                 <ul class="subtitle">flex-grow</ul>
                 <li>Definiert die Fähigkeit eines Flex Items, bei Bedarf zu wachsen. Sie akzeptiert einen einheitenlosen Wert, der als Proportion dient. Er gibt an, wie viel des verfügbaren Platzes innerhalb des Flex-Containers das Element einnehmen soll.</li>
                 <li>Wenn für alle Elemente flex-grow auf 1 gesetzt ist, wird der verbleibende Platz im Container gleichmäßig auf alle Kinder verteilt. Wenn eines der untergeordneten Elemente den Wert 2 hat, nimmt es doppelt so viel Platz ein wie eines der anderen Elemente (oder es versucht es zumindest).</li>
-                <img src="img/flex-grow.svg" class="foto">
+                <img src="img/flex-grow.png" class="foto">
                 <li>Negative Zahlen sind ungültig.</li>
             </article>
             <article class="mobile-hell">
@@ -124,7 +124,7 @@
             <article class="mobile-hell">
                 <ul class="subtitle">align-self</ul>
                 <li>Damit kann die Standardausrichtung (oder die durch align-items festgelegte) für einzelne Flex-Elemente außer Kraft gesetzt werden.</li>
-                <img src="img/align-self.svg" class="foto">
+                <img src="img/align-self.png" class="foto">
                 <li>Beachten Sie, dass float, clear und vertical-align keine Auswirkungen auf ein flex-Element haben.</li>
             </article>
         </aside>
